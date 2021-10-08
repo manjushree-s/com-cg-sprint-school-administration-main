@@ -1,0 +1,106 @@
+2021-09-22 13:54:53.305  INFO 13776 --- [restartedMain] com.cg.sprint.school.administration.App  : Starting App using Java 16.0.2 on DESKTOP-6JL3M44 with PID 13776 (C:\Users\admin\Documents\GitHub\com-cg-sprint-school-administration\com-cg-sprint-school-administration\target\classes started by admin in C:\Users\admin\Documents\GitHub\com-cg-sprint-school-administration\com-cg-sprint-school-administration)
+2021-09-22 13:54:53.309  INFO 13776 --- [restartedMain] com.cg.sprint.school.administration.App  : No active profile set, falling back to default profiles: default
+2021-09-22 13:54:53.653  INFO 13776 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-09-22 13:54:53.687  INFO 13776 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-09-22 13:55:03.514  INFO 13776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-22 13:55:03.902  INFO 13776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 355 ms. Found 8 JPA repository interfaces.
+2021-09-22 13:55:07.146  INFO 13776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-09-22 13:55:07.186  INFO 13776 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-22 13:55:07.188  INFO 13776 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-22 13:55:07.782  INFO 13776 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-22 13:55:07.816  INFO 13776 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 14126 ms
+2021-09-22 13:55:08.804  INFO 13776 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-22 13:55:09.107  INFO 13776 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-09-22 13:55:09.941  INFO 13776 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-22 13:55:10.914  INFO 13776 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-09-22 13:55:13.190  INFO 13776 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-09-22 13:55:14.055  INFO 13776 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-09-22 13:55:25.865  INFO 13776 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-22 13:55:25.924  INFO 13776 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-22 13:55:32.806  WARN 13776 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-22 13:55:33.688  INFO 13776 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-22 13:55:34.673  INFO 13776 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-22 13:55:36.731  INFO 13776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-09-22 13:55:36.735  INFO 13776 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-22 13:55:37.217  INFO 13776 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-22 13:55:37.502  INFO 13776 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-22 13:55:47.418  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteComplaintUsingDELETE_1
+2021-09-22 13:55:47.430  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllComplaintUsingGET_1
+2021-09-22 13:55:47.441  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCourseUsingGET_1
+2021-09-22 13:55:47.504  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllHomeworkUsingGET_1
+2021-09-22 13:55:47.521  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllNoticeUsingGET_1
+2021-09-22 13:55:47.535  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllStudyMaterialUsingGET_1
+2021-09-22 13:55:47.592  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getComplaintByIdUsingGET_1
+2021-09-22 13:55:47.620  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getHomeworkByIdUsingGET_1
+2021-09-22 13:55:47.686  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getNoticeByIdUsingGET_1
+2021-09-22 13:55:47.699  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getStudyMaterialByIdUsingGET_1
+2021-09-22 13:55:48.007  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteStudyMaterialUsingDELETE_1
+2021-09-22 13:55:48.071  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCourseUsingGET_2
+2021-09-22 13:55:48.092  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllHomeworkUsingGET_2
+2021-09-22 13:55:48.101  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllNoticeUsingGET_2
+2021-09-22 13:55:48.168  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllStudyMaterialUsingGET_2
+2021-09-22 13:55:48.184  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCourseByIdUsingGET_1
+2021-09-22 13:55:48.196  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getHomeworkByIdUsingGET_2
+2021-09-22 13:55:48.259  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getNoticeByIdUsingGET_2
+2021-09-22 13:55:48.279  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getStudyMaterialByIdUsingGET_2
+2021-09-22 13:55:48.327  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateHomeworkUsingPUT_1
+2021-09-22 13:55:48.568  INFO 13776 --- [restartedMain] com.cg.sprint.school.administration.App  : Started App in 57.853 seconds (JVM running for 62.2)
+2021-09-22 13:55:48.637  WARN 13776 --- [restartedMain] com.cg.sprint.school.administration.App  : this is a warning.
+2021-09-22 13:55:48.638 ERROR 13776 --- [restartedMain] com.cg.sprint.school.administration.App  : this is an error.
+2021-09-22 13:55:48.638  INFO 13776 --- [restartedMain] com.cg.sprint.school.administration.App  : End
+2021-09-22 14:15:13.469  INFO 13776 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-09-22 14:15:13.646  INFO 13776 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-09-22 14:15:15.920  INFO 13776 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2273 ms
+2021-09-22 14:48:18.811  INFO 13776 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-22 14:48:22.507  INFO 13776 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-09-22 14:48:25.366  INFO 13776 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-09-22 14:48:39.018  INFO 13776 --- [restartedMain] com.cg.sprint.school.administration.App  : Start
+2021-09-22 14:48:40.855  INFO 13776 --- [restartedMain] com.cg.sprint.school.administration.App  : Starting App using Java 16.0.2 on DESKTOP-6JL3M44 with PID 13776 (C:\Users\admin\Documents\GitHub\com-cg-sprint-school-administration\com-cg-sprint-school-administration\target\classes started by admin in C:\Users\admin\Documents\GitHub\com-cg-sprint-school-administration\com-cg-sprint-school-administration)
+2021-09-22 14:48:40.856  INFO 13776 --- [restartedMain] com.cg.sprint.school.administration.App  : No active profile set, falling back to default profiles: default
+2021-09-22 14:48:45.041  INFO 13776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-09-22 14:48:45.304  INFO 13776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 261 ms. Found 8 JPA repository interfaces.
+2021-09-22 14:48:47.188  INFO 13776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-09-22 14:48:47.193  INFO 13776 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-22 14:48:47.197  INFO 13776 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-09-22 14:48:47.402  INFO 13776 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-22 14:48:47.404  INFO 13776 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6533 ms
+2021-09-22 14:48:47.835  INFO 13776 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-09-22 14:48:47.944  INFO 13776 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-09-22 14:48:48.414  INFO 13776 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-09-22 14:48:48.423  INFO 13776 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-09-22 14:48:56.303  INFO 13776 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-09-22 14:48:56.305  INFO 13776 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-09-22 14:48:58.221  WARN 13776 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-09-22 14:48:58.728  INFO 13776 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-09-22 14:48:59.202  INFO 13776 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-09-22 14:48:59.858  INFO 13776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-09-22 14:48:59.861  INFO 13776 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-09-22 14:48:59.875  INFO 13776 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-09-22 14:48:59.912  INFO 13776 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-09-22 14:49:01.118  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteComplaintUsingDELETE_1
+2021-09-22 14:49:01.137  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllComplaintUsingGET_1
+2021-09-22 14:49:01.151  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCourseUsingGET_1
+2021-09-22 14:49:01.161  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllHomeworkUsingGET_1
+2021-09-22 14:49:01.173  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllNoticeUsingGET_1
+2021-09-22 14:49:01.182  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllStudyMaterialUsingGET_1
+2021-09-22 14:49:01.207  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getComplaintByIdUsingGET_1
+2021-09-22 14:49:01.257  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getHomeworkByIdUsingGET_1
+2021-09-22 14:49:01.342  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getNoticeByIdUsingGET_1
+2021-09-22 14:49:01.367  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getStudyMaterialByIdUsingGET_1
+2021-09-22 14:49:01.656  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteStudyMaterialUsingDELETE_1
+2021-09-22 14:49:01.667  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCourseUsingGET_2
+2021-09-22 14:49:01.676  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllHomeworkUsingGET_2
+2021-09-22 14:49:01.688  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllNoticeUsingGET_2
+2021-09-22 14:49:01.708  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllStudyMaterialUsingGET_2
+2021-09-22 14:49:01.745  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCourseByIdUsingGET_1
+2021-09-22 14:49:01.763  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getHomeworkByIdUsingGET_2
+2021-09-22 14:49:01.773  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getNoticeByIdUsingGET_2
+2021-09-22 14:49:01.784  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getStudyMaterialByIdUsingGET_2
+2021-09-22 14:49:01.824  INFO 13776 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateHomeworkUsingPUT_1
+2021-09-22 14:49:02.076  INFO 13776 --- [restartedMain] com.cg.sprint.school.administration.App  : Started App in 22.236 seconds (JVM running for 3255.707)
+2021-09-22 14:49:02.222  INFO 13776 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-09-22 14:49:02.223  INFO 13776 --- [restartedMain] com.cg.sprint.school.administration.App  : End
+2021-09-22 14:49:51.554  INFO 13776 --- [RMI TCP Connection(65)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-09-22 14:49:51.783  INFO 13776 --- [RMI TCP Connection(65)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-09-22 14:49:51.786  INFO 13776 --- [RMI TCP Connection(65)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-09-22 14:49:52.469  INFO 13776 --- [RMI TCP Connection(65)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.

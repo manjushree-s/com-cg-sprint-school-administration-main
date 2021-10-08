@@ -22,7 +22,7 @@ public class Admin implements Serializable {
 
 	@Id
 	@Column(name = "ADMIN_ID")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	//@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int adminId;
 
 	@Column(name = "ADMIN_NAME", length = 50)
@@ -68,7 +68,7 @@ public class Admin implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Admin [adminId=" + adminId + ", adminName=" + adminName + "]";
+		return "Admin [adminId=" + adminId + ", adminName=" + adminName + ", adminPassword=" + adminPassword + "]";
 	}
 
 }

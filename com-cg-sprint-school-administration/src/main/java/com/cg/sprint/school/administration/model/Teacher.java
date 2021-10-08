@@ -24,7 +24,7 @@ public class Teacher implements Serializable {
 
 	@Id
 	@Column(name = "TEACHER_ID")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	//@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int teacherId;
 
 	@Column(name = "TEACHER_NAME", length = 50)
@@ -70,7 +70,8 @@ public class Teacher implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Teacher [teacherId=" + teacherId + ", teacherName=" + teacherName + "]";
+		return "Teacher [teacherId=" + teacherId + ", teacherName=" + teacherName 
+				+ ", teacherPassword=" + teacherPassword + "]";
 	}
 
 }

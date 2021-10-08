@@ -63,10 +63,9 @@ public class StudentController {
 	private static final Logger LOG = LoggerFactory.getLogger(StudentController.class);
 	
 	@PostMapping(path = "/loginStudent")
-	public ResponseEntity<Student> studentLogin(@RequestBody Student student) throws IncorrectLoginCredentialsException {
-		Student result = studentService.loginStudent(student.getStudentId(), student.getStudentPassword());
-		ResponseEntity<Student> response = new ResponseEntity<>(result, HttpStatus.OK);
-		return response;
+	public String loginStudent(@RequestBody Student student) {
+		LOG.info("loginStudent");
+		return this.studentService.loginStudent(student);
 	}
 
 

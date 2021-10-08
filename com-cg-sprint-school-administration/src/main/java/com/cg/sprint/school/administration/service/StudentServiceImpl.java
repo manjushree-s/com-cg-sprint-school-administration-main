@@ -29,17 +29,19 @@ public class StudentServiceImpl {
 
 	private static final Logger LOG = LoggerFactory.getLogger(StudentService.class);
 	
-	public Student loginStudent(int studentId, String studentPassword) throws IncorrectLoginCredentialsException {
-		Student student = null;
-
-		if (studentRepository.existsById(studentId)
-				&& studentRepository.getById(studentId).getStudentPassword().equals(studentPassword)) {
-			student = studentRepository.getById(studentId);
-			LOG.info("Student login is  successfull");
-			return student;
+	public String loginStudent(Student student) {
+		LOG.info("login Student");
+		LOG.info(student.toString());
+		Student student2 = studentRepository.getById(student.getStudentId());
+		LOG.info(student2.toString());
+		if (student.getStudentId()==(student2.getStudentId()) && student.getStudentPassword().equals(student2.getStudentPassword())) {
+			LOG.info(student.toString());
+			LOG.info(student2.toString());
+			return "Login Succesful";
+		} else {
+			throw new IncorrectLoginCredentialsException("Invalid user name or password.");
 		}
-		LOG.error("Student details are incorrect");
-		throw new IncorrectLoginCredentialsException("Invalid Credentials");
+
 	}
 
 	// Add Student

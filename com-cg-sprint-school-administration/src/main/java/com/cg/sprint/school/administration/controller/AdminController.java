@@ -72,10 +72,9 @@ public class AdminController {
 	private static final Logger LOG = LoggerFactory.getLogger(AdminController.class);
 
 	@PostMapping(path = "/loginAdmin")
-	public ResponseEntity<Admin> adminLogin(@RequestBody Admin admin) throws IncorrectLoginCredentialsException {
-		Admin result = adminService.loginAdmin(admin.getAdminId(), admin.getAdminPassword());
-		ResponseEntity<Admin> response = new ResponseEntity<>(result, HttpStatus.OK);
-		return response;
+	public String loginAdmin(@RequestBody Admin admin) {
+		LOG.info("loginAdmin");
+		return this.adminService.loginAdmin(admin);
 	}
 
 	// http://localhost:8082/addAdmin

@@ -62,10 +62,9 @@ public class TeacherController {
 	private static final Logger LOG = LoggerFactory.getLogger(StudentController.class);
 	
 	@PostMapping(path = "/loginTeacher")
-	public ResponseEntity<Teacher> teacherLogin(@RequestBody Teacher teacher) throws IncorrectLoginCredentialsException {
-		Teacher result = teacherService.loginTeacher(teacher.getTeacherId(), teacher.getTeacherPassword());
-		ResponseEntity<Teacher> response = new ResponseEntity<>(result, HttpStatus.OK);
-		return response;
+	public String loginTeacher(@RequestBody Teacher teacher) {
+		LOG.info("loginTeacher");
+		return this.teacherService.loginTeacher(teacher);
 	}
 
 

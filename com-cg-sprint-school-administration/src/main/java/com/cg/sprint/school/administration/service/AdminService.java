@@ -16,7 +16,7 @@ import com.cg.sprint.school.administration.model.Student;
 import com.cg.sprint.school.administration.model.StudyMaterial;
 
 public interface AdminService {
-	public Admin loginAdmin(int adminId, String password) throws IncorrectLoginCredentialsException;
+	public String loginAdmin(Admin admin);
 
 	public Admin getAdminById(int adminId) throws AdminNotFoundException;
 

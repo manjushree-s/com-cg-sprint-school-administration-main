@@ -15,6 +15,7 @@ import com.cg.sprint.school.administration.exception.StudyMaterialNotFoundExcept
 import com.cg.sprint.school.administration.model.Admin;
 import com.cg.sprint.school.administration.model.Course;
 import com.cg.sprint.school.administration.model.Notice;
+import com.cg.sprint.school.administration.model.Student;
 import com.cg.sprint.school.administration.model.StudyMaterial;
 import com.cg.sprint.school.administration.repository.AdminRepository;
 import com.cg.sprint.school.administration.repository.NoticeRepository;
@@ -44,17 +45,19 @@ public class AdminServiceImpl {
 	// Admin Functionalities
 
 	// Login Function for Admin
-	public Admin loginAdmin(int adminId, String password) throws IncorrectLoginCredentialsException {
-		Admin admin = null;
-
-		if (adminRepository.existsById(adminId)
-				&& adminRepository.getById(adminId).getAdminPassword().equals(password)) {
-			admin = adminRepository.getById(adminId);
-			LOG.info("Admin login is  successfull");
-			return admin;
+	public String loginAdmin(Admin admin) {
+		LOG.info("login Admin");
+		LOG.info(admin.toString());
+		Admin admin2 = adminRepository.getById(admin.getAdminId());
+		LOG.info(admin2.toString());
+		if (admin.getAdminId()==(admin2.getAdminId()) && admin.getAdminPassword().equals(admin2.getAdminPassword())) {
+			LOG.info(admin.toString());
+			LOG.info(admin2.toString());
+			return "Login Succesful";
+		} else {
+			throw new IncorrectLoginCredentialsException("Invalid user name or password.");
 		}
-		LOG.error("Admin details are incorrect");
-		throw new IncorrectLoginCredentialsException("Invalid Credentials");
+
 	}
 
 	// Add Admin

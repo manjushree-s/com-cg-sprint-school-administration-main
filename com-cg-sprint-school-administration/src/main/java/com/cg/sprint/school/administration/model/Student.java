@@ -22,7 +22,7 @@ public class Student implements Serializable {
 
 	@Id
 	@Column(name = "STUDENT_ID")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	//@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int studentId;
 
 	@Column(name = "STUDENT_NAME", length = 50)
@@ -68,7 +68,8 @@ public class Student implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Student [studentId=" + studentId + ", studentName=" + studentName + "]";
+		return "Student [studentId=" + studentId + ", studentName=" + studentName + ", studentPassword=" 
+	            + studentPassword + "]";
 	}
 
 }

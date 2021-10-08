@@ -15,7 +15,7 @@ import com.cg.sprint.school.administration.model.Teacher;
 
 public interface TeacherService {
 	
-	public Teacher loginTeacher(int teacherId, String teacherPassword) throws IncorrectLoginCredentialsException;
+	public String loginTeacher(Teacher teacher);
 	
 	public Teacher addTeacher(Teacher teacher);
 	

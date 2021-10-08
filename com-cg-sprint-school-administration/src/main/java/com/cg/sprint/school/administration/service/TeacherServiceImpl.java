@@ -32,19 +32,20 @@ public class TeacherServiceImpl {
 	private static final Logger LOG = LoggerFactory.getLogger(TeacherService.class);
 
 	//Login Teacher
-	public Teacher loginTeacher(int teacherId, String teacherPassword) throws IncorrectLoginCredentialsException {
-		Teacher teacher = null;
-
-		if (teacherRepository.existsById(teacherId)
-				&& teacherRepository.getById(teacherId).getTeacherPassword().equals(teacherPassword)) {
-			teacher = teacherRepository.getById(teacherId);
-			LOG.info("Admin login is  successfull");
-			return teacher;
+	public String loginTeacher(Teacher teacher) {
+		LOG.info("login Teacher");
+		LOG.info(teacher.toString());
+		Teacher teacher2 = teacherRepository.getById(teacher.getTeacherId());
+		LOG.info(teacher2.toString());
+		if (teacher.getTeacherId()==(teacher2.getTeacherId()) && teacher.getTeacherPassword().equals(teacher2.getTeacherPassword())) {
+			LOG.info(teacher.toString());
+			LOG.info(teacher2.toString());
+			return "Login Succesful";
+		} else {
+			throw new IncorrectLoginCredentialsException("Invalid user name or password.");
 		}
-		LOG.error("Teacher details are incorrect");
-		throw new IncorrectLoginCredentialsException("Invalid Credentials");
+
 	}
-	
 	// Add Teacher
 	public Teacher addTeacher(Teacher teacher) {
 		LOG.info("addTeacher");

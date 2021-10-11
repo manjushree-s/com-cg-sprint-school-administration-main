@@ -41,6 +41,7 @@ import com.cg.sprint.school.administration.service.StudentServiceImpl;
 import com.cg.sprint.school.administration.service.TeacherServiceImpl;
 
 @RestController
+@RequestMapping(path = "school-admin/student")
 public class StudentController {
 	@Autowired
 	private StudentServiceImpl studentService;

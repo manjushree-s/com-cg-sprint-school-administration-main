@@ -25,7 +25,7 @@ public class Notice {
 	private String name;
 
 	@Column(name = "date")
-	private Date date;
+	private String date;
 
 	@Column(name = "notice")
 	private String notice;
@@ -33,7 +33,7 @@ public class Notice {
 	public Notice() {
 	}
 
-	public Notice(int noticeId, @NotBlank(message = "Name is mandatory") String name, Date date, String notice) {
+	public Notice(int noticeId, @NotBlank(message = "Name is mandatory") String name, String date, String notice) {
 		super();
 		this.noticeId = noticeId;
 		this.name = name;
@@ -57,11 +57,11 @@ public class Notice {
 		this.name = name;
 	}
 
-	public Date getDate() {
+	public String getDate() {
 		return date;
 	}
 
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 

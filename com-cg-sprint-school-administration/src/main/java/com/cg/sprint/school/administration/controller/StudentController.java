@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -41,7 +42,8 @@ import com.cg.sprint.school.administration.service.StudentServiceImpl;
 import com.cg.sprint.school.administration.service.TeacherServiceImpl;
 
 @RestController
-@RequestMapping(path = "school-admin/student")
+@RequestMapping(path = "school-admin")
+@CrossOrigin(origins = "*")
 public class StudentController {
 	@Autowired
 	private StudentServiceImpl studentService;
@@ -63,7 +65,7 @@ public class StudentController {
 
 	private static final Logger LOG = LoggerFactory.getLogger(StudentController.class);
 	
-	@PostMapping(path = "/loginStudent")
+	@PostMapping(path = "/student/loginStudent")
 	public String loginStudent(@RequestBody Student student) {
 		LOG.info("loginStudent");
 		return this.studentService.loginStudent(student);

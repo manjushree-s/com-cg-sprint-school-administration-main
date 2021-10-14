@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -43,6 +44,7 @@ import com.cg.sprint.school.administration.service.TeacherServiceImpl;
 
 @RestController
 @RequestMapping(path = "school-admin/teacher")
+@CrossOrigin(origins = "*")
 public class TeacherController {
 	@Autowired
 	private TeacherServiceImpl teacherService;
@@ -69,7 +71,7 @@ public class TeacherController {
 
 
 	// http://localhost:8082/teacher/getAllNotice
-	@GetMapping("/teacher/getAllNotice")
+	@GetMapping("/getAllNotice")
 	public List<Notice> getAllNotice() {
 		LOG.info("getAllNotice");
 
@@ -78,7 +80,7 @@ public class TeacherController {
 	}
 
 	// http://localhost:8082/teacher/getAllNoticeById/{noticeId}
-	@GetMapping("/teacher/getNoticeById/{noticeId}")
+	@GetMapping("/getNoticeById/{noticeId}")
 	public ResponseEntity<Notice> getNoticeById(@PathVariable int noticeId) {
 		LOG.info("getNotice");
 		Notice not = noticeService.getNoticeById(noticeId);
@@ -86,7 +88,7 @@ public class TeacherController {
 	}
 
 	// http://localhost:8082/teacher/getAllCourse
-	@GetMapping("/teacher/getAllCourse")
+	@GetMapping("/getAllCourse")
 	public List<Course> getAllCourse() {
 		LOG.info("getAllCourse");
 
@@ -95,7 +97,7 @@ public class TeacherController {
 	}
 
 	// http://localhost:8082/teacher/getCourseById/1
-	@GetMapping("/teacher/getCourseById/{courseId}")
+	@GetMapping("/getCourseById/{courseId}")
 	public ResponseEntity<Course> getCourseById(@PathVariable int courseId) {
 		LOG.info("getCourse");
 		Course cou = courseService.getCourseById(courseId);
@@ -103,14 +105,14 @@ public class TeacherController {
 	}
 
 	// http://localhost:8082/teacher/updateCourse
-	@PutMapping("/teacher/updateCourse")
+	@PutMapping("/updateCourse")
 	public Course updateCourse(@RequestBody Course course) {
 		LOG.info("updateCourse");
 		return courseService.updateCourse(course);
 	}
 
 	// http://localhost:8082/teacher/deleteCourse/{coursetId}
-	@DeleteMapping("/taecher/deleteCourse/{courseId}")
+	@DeleteMapping("/deleteCourse/{courseId}")
 	public int deleteCourse(@PathVariable int courseId) {
 		LOG.info("deleteCourse");
 
@@ -119,14 +121,14 @@ public class TeacherController {
 	}
 
 	// http://localhost:8082/teacher/addStudyMaterial
-	@PostMapping("/teacher/addStudyMaterial")
+	@PostMapping("/addStudyMaterial")
 	public StudyMaterial addStudyMaterial(@RequestBody StudyMaterial studyMaterial) {
 		LOG.info("addStudyMaterial");
 		return studyMaterialService.addStudyMaterial(studyMaterial);
 	}
 
 	// http://localhost:8082/teacher/getAllStudyMaterial
-	@GetMapping("/teacher/getAllStudyMaterial")
+	@GetMapping("/getAllStudyMaterial")
 	public List<StudyMaterial> getAllStudyMaterial() {
 		LOG.info("getAllStudyMaterial");
 
@@ -135,7 +137,7 @@ public class TeacherController {
 	}
 
 	// http://localhost:8082/teacher/getStudyMaterialById/1
-	@GetMapping("/teacher/getStudyMaterialById/{studyId}")
+	@GetMapping("/getStudyMaterialById/{studyId}")
 	public ResponseEntity<StudyMaterial> getStudyMaterialById(@PathVariable int studyId) {
 		LOG.info("getStudyMaterial");
 		StudyMaterial sm = studyMaterialService.getStudyMaterialById(studyId);
@@ -143,14 +145,14 @@ public class TeacherController {
 	}
 
 	// http://localhost:8082/teacher/updateStudyMaterial
-	@PutMapping("/teacher/updateStudyMaterial")
+	@PutMapping("/updateStudyMaterial")
 	public StudyMaterial updateStudyMaterial(@RequestBody StudyMaterial studyMaterial) {
 		LOG.info("updateStudyMaterial");
 		return studyMaterialService.updateStudyMaterial(studyMaterial);
 	}
 
 	// http://localhost:8082/teacher/deleteStudyMaterial/{studyId}
-	@DeleteMapping("/taecher/deleteStudyMaterial/{studyId}")
+	@DeleteMapping("/deleteStudyMaterial/{studyId}")
 	public int deleteStudyMaterial(@PathVariable int studyId) {
 		LOG.info("deleteStudyMaterial");
 
@@ -159,14 +161,14 @@ public class TeacherController {
 	}
 
 	// http://localhost:8082/teacher/addHomework
-	@PostMapping("/teacher/addHomework")
+	@PostMapping("/addHomework")
 	public Homework addHomework(@RequestBody Homework homework) {
 		LOG.info("addHomework");
 		return homeworkService.addHomework(homework);
 	}
 
 	// http://localhost:8082/teacher/getHomework
-	@GetMapping("/teacher/getHomework")
+	@GetMapping("/getHomework")
 	public List<Homework> getAllHomework() {
 		LOG.info("getAllHomework");
 
@@ -175,7 +177,7 @@ public class TeacherController {
 	}
 
 	// http://localhost:8082/teacher/getHomeworkById/1
-	@GetMapping("/teacher/getHomeworkById/{homeId}")
+	@GetMapping("/getHomeworkById/{homeId}")
 	public ResponseEntity<Homework> getHomeworkById(@PathVariable int homeId) {
 		LOG.info("getHomework");
 		Homework hw = homeworkService.getHomeworkById(homeId);
@@ -183,14 +185,14 @@ public class TeacherController {
 	}
 
 	// http://localhost:8082/teacher/updateHomework
-	@PutMapping("/teacher/updateHomework")
+	@PutMapping("/updateHomework")
 	public Homework updateHomework(@RequestBody Homework homework) {
 		LOG.info("updateHomework");
 		return homeworkService.updateHomework(homework);
 	}
 
 	// http://localhost:8082/teacher/deleteHomework/{homeId}
-	@DeleteMapping("/teacher/deleteHomework/{homeId}")
+	@DeleteMapping("/deleteHomework/{homeId}")
 	public int deleteHomework(@PathVariable int homeId) {
 		LOG.info("deleteHomework");
 

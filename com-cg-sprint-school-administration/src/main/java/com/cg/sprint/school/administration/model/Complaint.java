@@ -54,7 +54,7 @@ public class Complaint {
 		this.complaintId = complaintId;
 	}
 
-	public long getComplaintId() {
+	public int getComplaintId() {
 		return complaintId;
 	}
 

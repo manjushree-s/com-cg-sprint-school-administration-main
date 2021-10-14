@@ -1,610 +1,69 @@
-2021-10-11 09:49:35.491  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : Starting App using Java 16.0.2 on DESKTOP-KBJ2U8T with PID 5712 (C:\Users\Manjushree S\Spring Tool Suite\com-cg-sprint-school-administration-main\com-cg-sprint-school-administration\target\classes started by Manjushree S in C:\Users\Manjushree S\Spring Tool Suite\com-cg-sprint-school-administration-main\com-cg-sprint-school-administration)
-2021-10-11 09:49:35.655  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : No active profile set, falling back to default profiles: default
-2021-10-11 09:49:35.731  INFO 5712 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-10-11 09:49:35.733  INFO 5712 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-10-11 09:49:37.345  INFO 5712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-10-11 09:49:37.451  INFO 5712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 8 JPA repository interfaces.
-2021-10-11 09:49:38.238  INFO 5712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2021-10-11 09:49:38.267  INFO 5712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-10-11 09:49:38.269  INFO 5712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
-2021-10-11 09:49:38.409  INFO 5712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-10-11 09:49:38.409  INFO 5712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2675 ms
-2021-10-11 09:49:38.721  INFO 5712 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-10-11 09:49:38.885  INFO 5712 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
-2021-10-11 09:49:39.395  INFO 5712 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-10-11 09:49:39.568  INFO 5712 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-10-11 09:49:39.893  INFO 5712 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-10-11 09:49:39.921  INFO 5712 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2021-10-11 09:49:42.876  INFO 5712 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-10-11 09:49:42.887  INFO 5712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-10-11 09:49:43.965  WARN 5712 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-10-11 09:49:44.251  INFO 5712 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-10-11 09:49:44.432  INFO 5712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-10-11 09:49:44.740  INFO 5712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2021-10-11 09:49:44.741  INFO 5712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-10-11 09:49:44.769  INFO 5712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-10-11 09:49:44.799  INFO 5712 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-10-11 09:49:45.275  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteComplaintUsingDELETE_1
-2021-10-11 09:49:45.278  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllComplaintUsingGET_1
-2021-10-11 09:49:45.280  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCourseUsingGET_1
-2021-10-11 09:49:45.287  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllNoticeUsingGET_1
-2021-10-11 09:49:45.289  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllStudyMaterialUsingGET_1
-2021-10-11 09:49:45.292  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getComplaintByIdUsingGET_1
-2021-10-11 09:49:45.304  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getNoticeByIdUsingGET_1
-2021-10-11 09:49:45.308  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getStudyMaterialByIdUsingGET_1
-2021-10-11 09:49:45.346  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteStudyMaterialUsingDELETE_1
-2021-10-11 09:49:45.348  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCourseUsingGET_2
-2021-10-11 09:49:45.351  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllHomeworkUsingGET_1
-2021-10-11 09:49:45.353  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllNoticeUsingGET_2
-2021-10-11 09:49:45.356  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllStudyMaterialUsingGET_2
-2021-10-11 09:49:45.359  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCourseByIdUsingGET_1
-2021-10-11 09:49:45.361  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getHomeworkByIdUsingGET_1
-2021-10-11 09:49:45.364  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getNoticeByIdUsingGET_2
-2021-10-11 09:49:45.366  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getStudyMaterialByIdUsingGET_2
-2021-10-11 09:49:45.372  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateHomeworkUsingPUT_1
-2021-10-11 09:49:45.456  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : Started App in 10.509 seconds (JVM running for 12.588)
-2021-10-11 09:49:45.471  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : End
-2021-10-11 09:50:17.880  INFO 5712 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-10-11 09:50:17.881  INFO 5712 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-10-11 09:50:17.883  INFO 5712 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2021-10-11 09:51:05.108  INFO 5712 --- [http-nio-8082-exec-1] c.c.s.s.a.controller.AdminController     : getAllNotice
-2021-10-11 09:51:05.109  INFO 5712 --- [http-nio-8082-exec-1] c.c.s.s.a.service.AdminService           : getAllNotice
-2021-10-11 09:51:05.414  WARN 5712 --- [http-nio-8082-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 22007
-2021-10-11 09:51:05.414 ERROR 5712 --- [http-nio-8082-exec-1] o.h.engine.jdbc.spi.SqlExceptionHelper   : Bad value for type timestamp/date/time: {1}
-2021-10-11 09:51:05.428 ERROR 5712 --- [http-nio-8082-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute query; SQL [select notice0_.notice_id as notice_i1_4_, notice0_.date as date2_4_, notice0_.name as name3_4_, notice0_.notice as notice4_4_ from notice notice0_]; nested exception is org.hibernate.exception.DataException: could not execute query] with root cause
-
-java.lang.NumberFormatException: Trailing junk on timestamp: 'string'
-	at org.postgresql.jdbc.TimestampUtils.parseBackendTimestamp(TimestampUtils.java:352) ~[postgresql-42.2.23.jar:42.2.23]
-	at org.postgresql.jdbc.TimestampUtils.toTimestamp(TimestampUtils.java:394) ~[postgresql-42.2.23.jar:42.2.23]
-	at org.postgresql.jdbc.PgResultSet.getTimestamp(PgResultSet.java:628) ~[postgresql-42.2.23.jar:42.2.23]
-	at org.postgresql.jdbc.PgResultSet.getTimestamp(PgResultSet.java:2671) ~[postgresql-42.2.23.jar:42.2.23]
-	at com.zaxxer.hikari.pool.HikariProxyResultSet.getTimestamp(HikariProxyResultSet.java) ~[HikariCP-4.0.3.jar:na]
-	at org.hibernate.type.descriptor.sql.TimestampTypeDescriptor$2.doExtract(TimestampTypeDescriptor.java:84) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:47) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:257) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:253) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:243) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.type.AbstractStandardBasicType.hydrate(AbstractStandardBasicType.java:329) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.persister.entity.AbstractEntityPersister.hydrate(AbstractEntityPersister.java:3131) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.loadFromResultSet(Loader.java:1863) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.hydrateEntityState(Loader.java:1791) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.instanceNotYetLoaded(Loader.java:1764) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.getRow(Loader.java:1616) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:740) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.getRowsFromResultSet(Loader.java:1039) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.processResultSet(Loader.java:990) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.doQuery(Loader.java:959) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:349) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.doList(Loader.java:2843) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.doList(Loader.java:2825) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2657) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.list(Loader.java:2652) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:506) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1414) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1636) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1604) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.query.Query.getResultList(Query.java:165) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:396) ~[spring-data-jpa-2.5.4.jar:2.5.4]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.9.jar:5.3.9]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.9.jar:5.3.9]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.9.jar:5.3.9]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.9.jar:5.3.9]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.5.4.jar:2.5.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.9.jar:5.3.9]
-	at jdk.proxy3/jdk.proxy3.$Proxy106.findAll(Unknown Source) ~[na:na]
-	at com.cg.sprint.school.administration.service.AdminServiceImpl.getAllNotice(AdminServiceImpl.java:125) ~[classes/:na]
-	at com.cg.sprint.school.administration.controller.AdminController.getAllNotice(AdminController.java:222) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
-
-2021-10-11 09:52:54.389  INFO 5712 --- [http-nio-8082-exec-9] c.c.s.s.a.controller.AdminController     : getAllTeacher
-2021-10-11 09:52:54.389  INFO 5712 --- [http-nio-8082-exec-9] c.c.s.s.a.service.TeacherService         : getAllTeacher
-2021-10-11 09:53:15.964  INFO 5712 --- [http-nio-8082-exec-8] c.c.s.s.a.controller.AdminController     : getAllNotice
-2021-10-11 09:53:15.965  INFO 5712 --- [http-nio-8082-exec-8] c.c.s.s.a.service.AdminService           : getAllNotice
-2021-10-11 09:53:15.968  WARN 5712 --- [http-nio-8082-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 22007
-2021-10-11 09:53:15.969 ERROR 5712 --- [http-nio-8082-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : Bad value for type timestamp/date/time: {1}
-2021-10-11 09:53:15.971 ERROR 5712 --- [http-nio-8082-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute query; SQL [select notice0_.notice_id as notice_i1_4_, notice0_.date as date2_4_, notice0_.name as name3_4_, notice0_.notice as notice4_4_ from notice notice0_]; nested exception is org.hibernate.exception.DataException: could not execute query] with root cause
-
-java.lang.NumberFormatException: Trailing junk on timestamp: 'string'
-	at org.postgresql.jdbc.TimestampUtils.parseBackendTimestamp(TimestampUtils.java:352) ~[postgresql-42.2.23.jar:42.2.23]
-	at org.postgresql.jdbc.TimestampUtils.toTimestamp(TimestampUtils.java:394) ~[postgresql-42.2.23.jar:42.2.23]
-	at org.postgresql.jdbc.PgResultSet.getTimestamp(PgResultSet.java:628) ~[postgresql-42.2.23.jar:42.2.23]
-	at org.postgresql.jdbc.PgResultSet.getTimestamp(PgResultSet.java:2671) ~[postgresql-42.2.23.jar:42.2.23]
-	at com.zaxxer.hikari.pool.HikariProxyResultSet.getTimestamp(HikariProxyResultSet.java) ~[HikariCP-4.0.3.jar:na]
-	at org.hibernate.type.descriptor.sql.TimestampTypeDescriptor$2.doExtract(TimestampTypeDescriptor.java:84) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:47) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:257) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:253) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:243) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.type.AbstractStandardBasicType.hydrate(AbstractStandardBasicType.java:329) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.persister.entity.AbstractEntityPersister.hydrate(AbstractEntityPersister.java:3131) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.loadFromResultSet(Loader.java:1863) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.hydrateEntityState(Loader.java:1791) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.instanceNotYetLoaded(Loader.java:1764) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.getRow(Loader.java:1616) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:740) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.getRowsFromResultSet(Loader.java:1039) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.processResultSet(Loader.java:990) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.doQuery(Loader.java:959) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:349) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.doList(Loader.java:2843) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.doList(Loader.java:2825) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2657) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.list(Loader.java:2652) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:506) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1414) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1636) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1604) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.query.Query.getResultList(Query.java:165) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:396) ~[spring-data-jpa-2.5.4.jar:2.5.4]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.9.jar:5.3.9]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.9.jar:5.3.9]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.9.jar:5.3.9]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.9.jar:5.3.9]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.5.4.jar:2.5.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.9.jar:5.3.9]
-	at jdk.proxy3/jdk.proxy3.$Proxy106.findAll(Unknown Source) ~[na:na]
-	at com.cg.sprint.school.administration.service.AdminServiceImpl.getAllNotice(AdminServiceImpl.java:125) ~[classes/:na]
-	at com.cg.sprint.school.administration.controller.AdminController.getAllNotice(AdminController.java:222) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
-
-2021-10-11 09:53:39.260  INFO 5712 --- [http-nio-8082-exec-8] c.c.s.s.a.controller.AdminController     : getAllNotice
-2021-10-11 09:53:39.260  INFO 5712 --- [http-nio-8082-exec-8] c.c.s.s.a.service.AdminService           : getAllNotice
-2021-10-11 09:53:39.262  WARN 5712 --- [http-nio-8082-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 22007
-2021-10-11 09:53:39.262 ERROR 5712 --- [http-nio-8082-exec-8] o.h.engine.jdbc.spi.SqlExceptionHelper   : Bad value for type timestamp/date/time: {1}
-2021-10-11 09:53:39.265 ERROR 5712 --- [http-nio-8082-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute query; SQL [select notice0_.notice_id as notice_i1_4_, notice0_.date as date2_4_, notice0_.name as name3_4_, notice0_.notice as notice4_4_ from notice notice0_]; nested exception is org.hibernate.exception.DataException: could not execute query] with root cause
-
-java.lang.NumberFormatException: Trailing junk on timestamp: 'string'
-	at org.postgresql.jdbc.TimestampUtils.parseBackendTimestamp(TimestampUtils.java:352) ~[postgresql-42.2.23.jar:42.2.23]
-	at org.postgresql.jdbc.TimestampUtils.toTimestamp(TimestampUtils.java:394) ~[postgresql-42.2.23.jar:42.2.23]
-	at org.postgresql.jdbc.PgResultSet.getTimestamp(PgResultSet.java:628) ~[postgresql-42.2.23.jar:42.2.23]
-	at org.postgresql.jdbc.PgResultSet.getTimestamp(PgResultSet.java:2671) ~[postgresql-42.2.23.jar:42.2.23]
-	at com.zaxxer.hikari.pool.HikariProxyResultSet.getTimestamp(HikariProxyResultSet.java) ~[HikariCP-4.0.3.jar:na]
-	at org.hibernate.type.descriptor.sql.TimestampTypeDescriptor$2.doExtract(TimestampTypeDescriptor.java:84) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:47) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:257) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:253) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:243) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.type.AbstractStandardBasicType.hydrate(AbstractStandardBasicType.java:329) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.persister.entity.AbstractEntityPersister.hydrate(AbstractEntityPersister.java:3131) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.loadFromResultSet(Loader.java:1863) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.hydrateEntityState(Loader.java:1791) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.instanceNotYetLoaded(Loader.java:1764) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.getRow(Loader.java:1616) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:740) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.getRowsFromResultSet(Loader.java:1039) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.processResultSet(Loader.java:990) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.doQuery(Loader.java:959) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:349) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.doList(Loader.java:2843) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.doList(Loader.java:2825) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2657) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.Loader.list(Loader.java:2652) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:506) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:400) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:219) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1414) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.doList(AbstractProducedQuery.java:1636) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.query.internal.AbstractProducedQuery.list(AbstractProducedQuery.java:1604) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.query.Query.getResultList(Query.java:165) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.hibernate.query.criteria.internal.compile.CriteriaQueryTypeQueryAdapter.getResultList(CriteriaQueryTypeQueryAdapter.java:76) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
-	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:396) ~[spring-data-jpa-2.5.4.jar:2.5.4]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:599) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138) ~[spring-data-commons-2.5.4.jar:2.5.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.9.jar:5.3.9]
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.9.jar:5.3.9]
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.9.jar:5.3.9]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.9.jar:5.3.9]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.5.4.jar:2.5.4]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.9.jar:5.3.9]
-	at jdk.proxy3/jdk.proxy3.$Proxy106.findAll(Unknown Source) ~[na:na]
-	at com.cg.sprint.school.administration.service.AdminServiceImpl.getAllNotice(AdminServiceImpl.java:125) ~[classes/:na]
-	at com.cg.sprint.school.administration.controller.AdminController.getAllNotice(AdminController.java:222) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
-	at java.base/java.lang.Thread.run(Thread.java:831) ~[na:na]
-
-2021-10-11 09:54:50.905  INFO 5712 --- [Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-10-11 09:54:50.909  INFO 5712 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2021-10-11 09:54:50.914  INFO 5712 --- [Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2021-10-11 09:54:50.989  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : Start
-2021-10-11 09:54:51.027  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : Starting App using Java 16.0.2 on DESKTOP-KBJ2U8T with PID 5712 (C:\Users\Manjushree S\Spring Tool Suite\com-cg-sprint-school-administration-main\com-cg-sprint-school-administration\target\classes started by Manjushree S in C:\Users\Manjushree S\Spring Tool Suite\com-cg-sprint-school-administration-main\com-cg-sprint-school-administration)
-2021-10-11 09:54:51.027  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : No active profile set, falling back to default profiles: default
-2021-10-11 09:54:51.328  INFO 5712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-10-11 09:54:51.357  INFO 5712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 8 JPA repository interfaces.
-2021-10-11 09:54:51.463  INFO 5712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2021-10-11 09:54:51.464  INFO 5712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-10-11 09:54:51.464  INFO 5712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
-2021-10-11 09:54:51.488  INFO 5712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-10-11 09:54:51.488  INFO 5712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 459 ms
-2021-10-11 09:54:51.528  INFO 5712 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-10-11 09:54:51.534  INFO 5712 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2021-10-11 09:54:51.579  INFO 5712 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2021-10-11 09:54:51.580  INFO 5712 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2021-10-11 09:54:52.630  INFO 5712 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-10-11 09:54:52.630  INFO 5712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-10-11 09:54:52.793  WARN 5712 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-10-11 09:54:52.839  INFO 5712 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-10-11 09:54:52.877  INFO 5712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-10-11 09:54:52.924  INFO 5712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2021-10-11 09:54:52.924  INFO 5712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-10-11 09:54:52.925  INFO 5712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-10-11 09:54:52.930  INFO 5712 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-10-11 09:54:53.070  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteComplaintUsingDELETE_1
-2021-10-11 09:54:53.072  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllComplaintUsingGET_1
-2021-10-11 09:54:53.074  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCourseUsingGET_1
-2021-10-11 09:54:53.078  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllNoticeUsingGET_1
-2021-10-11 09:54:53.080  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllStudyMaterialUsingGET_1
-2021-10-11 09:54:53.082  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getComplaintByIdUsingGET_1
-2021-10-11 09:54:53.088  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getNoticeByIdUsingGET_1
-2021-10-11 09:54:53.090  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getStudyMaterialByIdUsingGET_1
-2021-10-11 09:54:53.120  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteStudyMaterialUsingDELETE_1
-2021-10-11 09:54:53.121  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCourseUsingGET_2
-2021-10-11 09:54:53.123  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllHomeworkUsingGET_1
-2021-10-11 09:54:53.125  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllNoticeUsingGET_2
-2021-10-11 09:54:53.126  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllStudyMaterialUsingGET_2
-2021-10-11 09:54:53.128  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCourseByIdUsingGET_1
-2021-10-11 09:54:53.130  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getHomeworkByIdUsingGET_1
-2021-10-11 09:54:53.131  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getNoticeByIdUsingGET_2
-2021-10-11 09:54:53.133  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getStudyMaterialByIdUsingGET_2
-2021-10-11 09:54:53.138  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateHomeworkUsingPUT_1
-2021-10-11 09:54:53.143  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : Started App in 2.149 seconds (JVM running for 320.275)
-2021-10-11 09:54:53.145  INFO 5712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2021-10-11 09:54:53.145  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : End
-2021-10-11 09:55:09.656  INFO 5712 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-10-11 09:55:09.657  INFO 5712 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-10-11 09:55:09.658  INFO 5712 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-10-11 09:55:09.659  INFO 5712 --- [http-nio-8082-exec-1] c.c.s.s.a.controller.AdminController     : getAllNotice
-2021-10-11 09:55:09.659  INFO 5712 --- [http-nio-8082-exec-1] c.c.s.s.a.service.AdminService           : getAllNotice
-2021-10-11 09:55:17.533  INFO 5712 --- [http-nio-8082-exec-2] c.c.s.s.a.controller.AdminController     : getAllNotice
-2021-10-11 09:55:17.534  INFO 5712 --- [http-nio-8082-exec-2] c.c.s.s.a.service.AdminService           : getAllNotice
-2021-10-11 10:10:53.320  INFO 5712 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-10-11 10:10:53.321  INFO 5712 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2021-10-11 10:10:53.332  INFO 5712 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2021-10-11 10:10:53.420  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : Start
-2021-10-11 10:10:53.456  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : Starting App using Java 16.0.2 on DESKTOP-KBJ2U8T with PID 5712 (C:\Users\Manjushree S\Spring Tool Suite\com-cg-sprint-school-administration-main\com-cg-sprint-school-administration\target\classes started by Manjushree S in C:\Users\Manjushree S\Spring Tool Suite\com-cg-sprint-school-administration-main\com-cg-sprint-school-administration)
-2021-10-11 10:10:53.456  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : No active profile set, falling back to default profiles: default
-2021-10-11 10:10:53.869  INFO 5712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-10-11 10:10:53.912  INFO 5712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 8 JPA repository interfaces.
-2021-10-11 10:10:54.012  INFO 5712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2021-10-11 10:10:54.013  INFO 5712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-10-11 10:10:54.013  INFO 5712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
-2021-10-11 10:10:54.034  INFO 5712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-10-11 10:10:54.034  INFO 5712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 573 ms
-2021-10-11 10:10:54.067  INFO 5712 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-10-11 10:10:54.072  INFO 5712 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
-2021-10-11 10:10:54.109  INFO 5712 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
-2021-10-11 10:10:54.109  INFO 5712 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2021-10-11 10:10:55.288  INFO 5712 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-10-11 10:10:55.288  INFO 5712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-10-11 10:10:55.438  WARN 5712 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-10-11 10:10:55.472  INFO 5712 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-10-11 10:10:55.513  INFO 5712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-10-11 10:10:55.564  INFO 5712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2021-10-11 10:10:55.565  INFO 5712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-10-11 10:10:55.566  INFO 5712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-10-11 10:10:55.571  INFO 5712 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-10-11 10:10:55.698  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteComplaintUsingDELETE_1
-2021-10-11 10:10:55.700  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllComplaintUsingGET_1
-2021-10-11 10:10:55.702  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCourseUsingGET_1
-2021-10-11 10:10:55.706  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllNoticeUsingGET_1
-2021-10-11 10:10:55.708  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllStudyMaterialUsingGET_1
-2021-10-11 10:10:55.710  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getComplaintByIdUsingGET_1
-2021-10-11 10:10:55.716  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getNoticeByIdUsingGET_1
-2021-10-11 10:10:55.718  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getStudyMaterialByIdUsingGET_1
-2021-10-11 10:10:55.754  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteStudyMaterialUsingDELETE_1
-2021-10-11 10:10:55.756  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCourseUsingGET_2
-2021-10-11 10:10:55.758  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllHomeworkUsingGET_1
-2021-10-11 10:10:55.759  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllNoticeUsingGET_2
-2021-10-11 10:10:55.762  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllStudyMaterialUsingGET_2
-2021-10-11 10:10:55.763  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCourseByIdUsingGET_1
-2021-10-11 10:10:55.765  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getHomeworkByIdUsingGET_1
-2021-10-11 10:10:55.767  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getNoticeByIdUsingGET_2
-2021-10-11 10:10:55.769  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getStudyMaterialByIdUsingGET_2
-2021-10-11 10:10:55.774  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateHomeworkUsingPUT_1
-2021-10-11 10:10:55.781  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : Started App in 2.356 seconds (JVM running for 1282.912)
-2021-10-11 10:10:55.782  INFO 5712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2021-10-11 10:10:55.782  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : End
-2021-10-11 10:12:17.385  INFO 5712 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2021-10-11 10:12:17.386  INFO 5712 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
-2021-10-11 10:12:17.412  INFO 5712 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
-2021-10-11 10:12:17.486  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : Start
-2021-10-11 10:12:17.656  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : Starting App using Java 16.0.2 on DESKTOP-KBJ2U8T with PID 5712 (C:\Users\Manjushree S\Spring Tool Suite\com-cg-sprint-school-administration-main\com-cg-sprint-school-administration\target\classes started by Manjushree S in C:\Users\Manjushree S\Spring Tool Suite\com-cg-sprint-school-administration-main\com-cg-sprint-school-administration)
-2021-10-11 10:12:17.656  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : No active profile set, falling back to default profiles: default
-2021-10-11 10:12:17.667  WARN 5712 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\Users\Manjushree S\Spring Tool Suite\com-cg-sprint-school-administration-main\com-cg-sprint-school-administration\target\classes\com\cg\sprint\school\administration\controller\StudentController.class]; nested exception is java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 0
-2021-10-11 10:12:17.771 ERROR 5712 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [C:\Users\Manjushree S\Spring Tool Suite\com-cg-sprint-school-administration-main\com-cg-sprint-school-administration\target\classes\com\cg\sprint\school\administration\controller\StudentController.class]; nested exception is java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 0
-	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:452) ~[spring-context-5.3.9.jar:5.3.9]
-	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:315) ~[spring-context-5.3.9.jar:5.3.9]
-	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:276) ~[spring-context-5.3.9.jar:5.3.9]
-	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132) ~[spring-context-5.3.9.jar:5.3.9]
-	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296) ~[spring-context-5.3.9.jar:5.3.9]
-	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250) ~[spring-context-5.3.9.jar:5.3.9]
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207) ~[spring-context-5.3.9.jar:5.3.9]
-	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175) ~[spring-context-5.3.9.jar:5.3.9]
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331) ~[spring-context-5.3.9.jar:5.3.9]
-	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247) ~[spring-context-5.3.9.jar:5.3.9]
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311) ~[spring-context-5.3.9.jar:5.3.9]
-	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112) ~[spring-context-5.3.9.jar:5.3.9]
-	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746) ~[spring-context-5.3.9.jar:5.3.9]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564) ~[spring-context-5.3.9.jar:5.3.9]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.5.4.jar:2.5.4]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-2.5.4.jar:2.5.4]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434) ~[spring-boot-2.5.4.jar:2.5.4]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338) ~[spring-boot-2.5.4.jar:2.5.4]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.4.jar:2.5.4]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.4.jar:2.5.4]
-	at com.cg.sprint.school.administration.App.main(App.java:16) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.5.4.jar:2.5.4]
-Caused by: java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 0
-	at org.springframework.asm.ClassReader.readShort(ClassReader.java:3613) ~[spring-core-5.3.9.jar:5.3.9]
-	at org.springframework.asm.ClassReader.<init>(ClassReader.java:197) ~[spring-core-5.3.9.jar:5.3.9]
-	at org.springframework.asm.ClassReader.<init>(ClassReader.java:180) ~[spring-core-5.3.9.jar:5.3.9]
-	at org.springframework.asm.ClassReader.<init>(ClassReader.java:166) ~[spring-core-5.3.9.jar:5.3.9]
-	at org.springframework.asm.ClassReader.<init>(ClassReader.java:287) ~[spring-core-5.3.9.jar:5.3.9]
-	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:57) ~[spring-core-5.3.9.jar:5.3.9]
-	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:49) ~[spring-core-5.3.9.jar:5.3.9]
-	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103) ~[spring-core-5.3.9.jar:5.3.9]
-	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:123) ~[spring-core-5.3.9.jar:5.3.9]
-	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:429) ~[spring-context-5.3.9.jar:5.3.9]
-	... 25 common frames omitted
-
-2021-10-11 10:12:19.326  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : Start
-2021-10-11 10:12:19.353  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : Starting App using Java 16.0.2 on DESKTOP-KBJ2U8T with PID 5712 (C:\Users\Manjushree S\Spring Tool Suite\com-cg-sprint-school-administration-main\com-cg-sprint-school-administration\target\classes started by Manjushree S in C:\Users\Manjushree S\Spring Tool Suite\com-cg-sprint-school-administration-main\com-cg-sprint-school-administration)
-2021-10-11 10:12:19.353  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : No active profile set, falling back to default profiles: default
-2021-10-11 10:12:19.675  INFO 5712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-10-11 10:12:19.704  INFO 5712 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 8 JPA repository interfaces.
-2021-10-11 10:12:19.796  INFO 5712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
-2021-10-11 10:12:19.796  INFO 5712 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-10-11 10:12:19.796  INFO 5712 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
-2021-10-11 10:12:19.816  INFO 5712 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-10-11 10:12:19.816  INFO 5712 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 461 ms
-2021-10-11 10:12:19.848  INFO 5712 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-10-11 10:12:19.855  INFO 5712 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
-2021-10-11 10:12:19.899  INFO 5712 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
-2021-10-11 10:12:19.899  INFO 5712 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-2021-10-11 10:12:21.080  INFO 5712 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-10-11 10:12:21.080  INFO 5712 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-10-11 10:12:21.230  WARN 5712 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-10-11 10:12:21.263  INFO 5712 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-10-11 10:12:21.302  INFO 5712 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-10-11 10:12:21.361  INFO 5712 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
-2021-10-11 10:12:21.362  INFO 5712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-10-11 10:12:21.362  INFO 5712 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-10-11 10:12:21.367  INFO 5712 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-10-11 10:12:21.489  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteComplaintUsingDELETE_1
-2021-10-11 10:12:21.491  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllComplaintUsingGET_1
-2021-10-11 10:12:21.492  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCourseUsingGET_1
-2021-10-11 10:12:21.496  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllNoticeUsingGET_1
-2021-10-11 10:12:21.498  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllStudyMaterialUsingGET_1
-2021-10-11 10:12:21.500  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getComplaintByIdUsingGET_1
-2021-10-11 10:12:21.506  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getNoticeByIdUsingGET_1
-2021-10-11 10:12:21.507  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getStudyMaterialByIdUsingGET_1
-2021-10-11 10:12:21.541  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteStudyMaterialUsingDELETE_1
-2021-10-11 10:12:21.542  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCourseUsingGET_2
-2021-10-11 10:12:21.544  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllHomeworkUsingGET_1
-2021-10-11 10:12:21.546  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllNoticeUsingGET_2
-2021-10-11 10:12:21.547  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllStudyMaterialUsingGET_2
-2021-10-11 10:12:21.549  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCourseByIdUsingGET_1
-2021-10-11 10:12:21.551  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getHomeworkByIdUsingGET_1
-2021-10-11 10:12:21.553  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getNoticeByIdUsingGET_2
-2021-10-11 10:12:21.555  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getStudyMaterialByIdUsingGET_2
-2021-10-11 10:12:21.560  INFO 5712 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateHomeworkUsingPUT_1
-2021-10-11 10:12:21.567  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : Started App in 2.237 seconds (JVM running for 1368.698)
-2021-10-11 10:12:21.568  INFO 5712 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2021-10-11 10:12:21.569  INFO 5712 --- [restartedMain] com.cg.sprint.school.administration.App  : End
-2021-10-11 10:12:32.411  INFO 5712 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-10-11 10:12:32.412  INFO 5712 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-10-11 10:12:32.412  INFO 5712 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-2021-10-11 10:12:44.818  INFO 5712 --- [http-nio-8082-exec-10] c.c.s.s.a.controller.AdminController     : getAllDep
-2021-10-11 10:12:44.819  INFO 5712 --- [http-nio-8082-exec-10] c.c.s.s.a.service.AdminService           : getAllAdmin
+2021-10-14 09:29:26.978  INFO 8620 --- [restartedMain] com.cg.sprint.school.administration.App  : Starting App using Java 16.0.2 on DESKTOP-KBJ2U8T with PID 8620 (C:\Users\Manjushree S\Spring Tool Suite\com-cg-sprint-school-administration-main\com-cg-sprint-school-administration\target\classes started by Manjushree S in C:\Users\Manjushree S\Spring Tool Suite\com-cg-sprint-school-administration-main\com-cg-sprint-school-administration)
+2021-10-14 09:29:26.983  INFO 8620 --- [restartedMain] com.cg.sprint.school.administration.App  : No active profile set, falling back to default profiles: default
+2021-10-14 09:29:27.085  INFO 8620 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-10-14 09:29:27.085  INFO 8620 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-10-14 09:29:29.525  INFO 8620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-14 09:29:29.647  INFO 8620 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 8 JPA repository interfaces.
+2021-10-14 09:29:31.144  INFO 8620 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-10-14 09:29:31.176  INFO 8620 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-14 09:29:31.177  INFO 8620 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-10-14 09:29:31.305  INFO 8620 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-10-14 09:29:31.306  INFO 8620 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4220 ms
+2021-10-14 09:29:32.090  INFO 8620 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-14 09:29:32.319  INFO 8620 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-10-14 09:29:32.956  INFO 8620 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-14 09:29:33.172  INFO 8620 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-10-14 09:29:33.594  INFO 8620 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-10-14 09:29:33.713  INFO 8620 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-10-14 09:29:37.023  INFO 8620 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-14 09:29:37.071  INFO 8620 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-14 09:29:38.462  WARN 8620 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-14 09:29:38.883  INFO 8620 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-10-14 09:29:39.167  INFO 8620 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-10-14 09:29:39.719  INFO 8620 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-10-14 09:29:39.721  INFO 8620 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-10-14 09:29:39.801  INFO 8620 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-10-14 09:29:39.947  INFO 8620 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-10-14 09:29:40.434  INFO 8620 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteComplaintUsingDELETE_1
+2021-10-14 09:29:40.437  INFO 8620 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllComplaintUsingGET_1
+2021-10-14 09:29:40.439  INFO 8620 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCourseUsingGET_1
+2021-10-14 09:29:40.444  INFO 8620 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllNoticeUsingGET_1
+2021-10-14 09:29:40.446  INFO 8620 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllStudyMaterialUsingGET_1
+2021-10-14 09:29:40.448  INFO 8620 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getComplaintByIdUsingGET_1
+2021-10-14 09:29:40.460  INFO 8620 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getNoticeByIdUsingGET_1
+2021-10-14 09:29:40.464  INFO 8620 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getStudyMaterialByIdUsingGET_1
+2021-10-14 09:29:40.508  INFO 8620 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteStudyMaterialUsingDELETE_1
+2021-10-14 09:29:40.510  INFO 8620 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllCourseUsingGET_2
+2021-10-14 09:29:40.513  INFO 8620 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllHomeworkUsingGET_1
+2021-10-14 09:29:40.515  INFO 8620 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllNoticeUsingGET_2
+2021-10-14 09:29:40.517  INFO 8620 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getAllStudyMaterialUsingGET_2
+2021-10-14 09:29:40.520  INFO 8620 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getCourseByIdUsingGET_1
+2021-10-14 09:29:40.523  INFO 8620 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getHomeworkByIdUsingGET_1
+2021-10-14 09:29:40.525  INFO 8620 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getNoticeByIdUsingGET_2
+2021-10-14 09:29:40.528  INFO 8620 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getStudyMaterialByIdUsingGET_2
+2021-10-14 09:29:40.534  INFO 8620 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateHomeworkUsingPUT_1
+2021-10-14 09:29:40.742  INFO 8620 --- [restartedMain] com.cg.sprint.school.administration.App  : Started App in 14.637 seconds (JVM running for 16.639)
+2021-10-14 09:29:40.745  INFO 8620 --- [restartedMain] com.cg.sprint.school.administration.App  : End
+2021-10-14 09:49:47.801  INFO 8620 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-14 09:49:47.801  INFO 8620 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-14 09:49:47.802  INFO 8620 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-10-14 09:49:47.959  INFO 8620 --- [http-nio-8082-exec-2] c.c.s.s.a.controller.AdminController     : loginAdmin
+2021-10-14 09:49:47.960  INFO 8620 --- [http-nio-8082-exec-2] c.c.s.s.a.service.AdminService           : login Admin
+2021-10-14 09:49:47.960  INFO 8620 --- [http-nio-8082-exec-2] c.c.s.s.a.service.AdminService           : Admin [adminId=2, adminName=null, adminPassword=]
+2021-10-14 09:49:48.092  INFO 8620 --- [http-nio-8082-exec-2] c.c.s.s.a.service.AdminService           : Admin [adminId=2, adminName=admin, adminPassword=root]
+2021-10-14 09:49:48.093 ERROR 8620 --- [http-nio-8082-exec-2] c.c.s.s.a.e.CustomExceptionHandler       : handleIncorrectLoginCredentialsException
+2021-10-14 09:49:48.097  WARN 8620 --- [http-nio-8082-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.cg.sprint.school.administration.exception.IncorrectLoginCredentialsException: Invalid user name or password.]
+2021-10-14 09:49:54.947  INFO 8620 --- [http-nio-8082-exec-3] c.c.s.s.a.controller.AdminController     : loginAdmin
+2021-10-14 09:49:54.947  INFO 8620 --- [http-nio-8082-exec-3] c.c.s.s.a.service.AdminService           : login Admin
+2021-10-14 09:49:54.948  INFO 8620 --- [http-nio-8082-exec-3] c.c.s.s.a.service.AdminService           : Admin [adminId=2, adminName=null, adminPassword=root]
+2021-10-14 09:49:54.949  INFO 8620 --- [http-nio-8082-exec-3] c.c.s.s.a.service.AdminService           : Admin [adminId=2, adminName=admin, adminPassword=root]
+2021-10-14 09:49:54.949  INFO 8620 --- [http-nio-8082-exec-3] c.c.s.s.a.service.AdminService           : Admin [adminId=2, adminName=null, adminPassword=root]
+2021-10-14 09:49:54.949  INFO 8620 --- [http-nio-8082-exec-3] c.c.s.s.a.service.AdminService           : Admin [adminId=2, adminName=admin, adminPassword=root]
+2021-10-14 09:52:16.584  INFO 8620 --- [http-nio-8082-exec-5] c.c.s.s.a.controller.StudentController   : getAllComplaint
+2021-10-14 09:52:16.585  INFO 8620 --- [http-nio-8082-exec-5] c.c.s.s.a.service.StudentService         : getAllCompalint
+2021-10-14 09:53:11.108  INFO 8620 --- [http-nio-8082-exec-6] c.c.s.s.a.controller.AdminController     : getAllDep
+2021-10-14 09:53:11.108  INFO 8620 --- [http-nio-8082-exec-6] c.c.s.s.a.service.AdminService           : getAllAdmin
+2021-10-14 09:55:06.663  INFO 8620 --- [http-nio-8082-exec-8] c.c.s.s.a.controller.AdminController     : getAdmin
+2021-10-14 09:55:06.664  INFO 8620 --- [http-nio-8082-exec-8] c.c.s.s.a.service.AdminService           : getAdminById 1
+2021-10-14 09:55:08.875  INFO 8620 --- [http-nio-8082-exec-9] c.c.s.s.a.controller.AdminController     : getAdmin
+2021-10-14 09:55:08.875  INFO 8620 --- [http-nio-8082-exec-9] c.c.s.s.a.service.AdminService           : getAdminById 2
